@@ -2,6 +2,8 @@
 using System.Net;
 using System.Threading;
 using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace UDPScope
 {
@@ -27,6 +29,7 @@ namespace UDPScope
 
 
         public static bool messageReceived = false;
+        private Byte[] lastData;
 
         public void UDPPacketReceivedCallback(IAsyncResult ar)
         {
@@ -34,11 +37,70 @@ namespace UDPScope
             IPEndPoint e = (IPEndPoint)((UdpState)(ar.AsyncState)).e;
 
             Byte[] receiveBytes = u.EndReceive(ar, ref e);
+            lastData = (Byte[])receiveBytes.Clone();
+            screen.Invalidate();
+            Console.WriteLine("received " + lastData.Length + " bytes");
+        }
 
-            int width = receiveBytes.Length;
+        public void updateImage()
+        {
+            Console.Write("redrawing:");
+            if (lastData != null)
+            {
+                Console.WriteLine(" OK");
+                int width = lastData.Length;
 
-            if (this.screen.Image.Width < width) width = this.screen.Image.Width;
-            //  todo: trace graph now
+                Image image = this.screen.Image;
+                if (image == null)
+                {
+                    this.screen.Image = new Bitmap(1024, 256);
+                    image = this.screen.Image;
+                }
+
+                if (image.Width < width) width = image.Width;
+                //  todo: trace graph now
+
+                lock (this.screen)
+                {
+                    Rectangle srcRect = new Rectangle(0, 0, image.Width, image.Height);
+                    BitmapData see = ((Bitmap)image).LockBits(srcRect, ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
+
+                    // process
+                    int PixelSize = 4; //A,R,G,B
+                    int x = 0, y = 0;
+                    int w = image.Width, h = image.Height;
+
+                    unsafe
+                    {
+                        for (int yScan = y; yScan < (y + h); yScan++)
+                        {
+
+                            byte* row = (byte*)see.Scan0 + yScan * see.Stride;
+                            for (int xScan = x; xScan < (x + w); xScan++)
+                            {
+                                int xRef = xScan * PixelSize;
+
+                                row[xRef] = 0; // B
+                                row[xRef + 1] = (lastData[xScan] > y ? (byte)0 : (byte)255); // G
+                                row[xRef + 2] = 0;  // R
+                                row[xRef + 3] = 0;  // A
+
+                                // todo:traitement
+
+                            }
+                        }
+                    }
+
+                    // close
+                    ((Bitmap)image).UnlockBits(see);
+
+                }
+            }
+            else
+            {
+                Console.WriteLine(" aborted");
+
+            }
         }
 
 
@@ -60,11 +122,12 @@ namespace UDPScope
             // 
             // screen
             // 
-            this.screen.Location = new System.Drawing.Point(-2, 30);
+            this.screen.Location = new System.Drawing.Point(12, 29);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(906, 232);
+            this.screen.Size = new System.Drawing.Size(1024, 256);
             this.screen.TabIndex = 0;
             this.screen.TabStop = false;
+            this.screen.Paint += new System.Windows.Forms.PaintEventHandler(this.screen_Paint);
             // 
             // Start
             // 
@@ -88,7 +151,7 @@ namespace UDPScope
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 262);
+            this.ClientSize = new System.Drawing.Size(1044, 291);
             this.Controls.Add(this.portNumber);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.screen);
