@@ -42,6 +42,7 @@ namespace UDPScope
             s.u = udpClient;
             udpClient.BeginReceive(new AsyncCallback(form.UDPPacketReceivedCallback), s);
 
+            
             Application.Run(form);
 
         }

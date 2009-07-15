@@ -24,5 +24,10 @@ namespace UDPScope
         {
             return this.screen;
         }
+
+        private void screen_Paint(object sender, PaintEventArgs e)
+        {
+            updateImage();
+        }
     }
 }
