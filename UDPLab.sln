@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPConsole", "UDPConsole\UDPConsole.csproj", "{4D35FB55-A48B-4F0B-A586-4500426DE268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPScope", "UDPScope\UDPScope.csproj", "{81093061-1CAA-404C-8FA0-CC53780B742D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPSoundSender", "UDPSoundSender\UDPSoundSender.csproj", "{078F7502-859D-4A62-AE29-3012FAD8C1A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D35FB55-A48B-4F0B-A586-4500426DE268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D35FB55-A48B-4F0B-A586-4500426DE268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D35FB55-A48B-4F0B-A586-4500426DE268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D35FB55-A48B-4F0B-A586-4500426DE268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81093061-1CAA-404C-8FA0-CC53780B742D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81093061-1CAA-404C-8FA0-CC53780B742D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81093061-1CAA-404C-8FA0-CC53780B742D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81093061-1CAA-404C-8FA0-CC53780B742D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078F7502-859D-4A62-AE29-3012FAD8C1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078F7502-859D-4A62-AE29-3012FAD8C1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078F7502-859D-4A62-AE29-3012FAD8C1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078F7502-859D-4A62-AE29-3012FAD8C1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
