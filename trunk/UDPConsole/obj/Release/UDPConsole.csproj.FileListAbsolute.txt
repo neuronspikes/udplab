@@ -1,0 +1,10 @@
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\ConsoleApplication2\ConsoleApplication2\obj\Release\ResolveAssemblyReference.cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\ConsoleApplication2\ConsoleApplication2\bin\Release\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\ConsoleApplication2\ConsoleApplication2\bin\Release\UDPConsole.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\ConsoleApplication2\ConsoleApplication2\obj\Release\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\ConsoleApplication2\ConsoleApplication2\obj\Release\UDPConsole.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\obj\Release\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\obj\Release\UDPConsole.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\bin\Release\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\bin\Release\UDPConsole.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\obj\Release\ResolveAssemblyReference.cache

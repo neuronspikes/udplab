@@ -1,0 +1,5 @@
+C:\StephDenis\C4FDevKit\DXSoundRecorder\Source\VCS\UDPSoundSender\obj\Debug\ResolveAssemblyReference.cache
+C:\StephDenis\C4FDevKit\DXSoundRecorder\Source\VCS\UDPSoundSender\bin\Debug\UDPSoundSender.exe
+C:\StephDenis\C4FDevKit\DXSoundRecorder\Source\VCS\UDPSoundSender\bin\Debug\UDPSoundSender.pdb
+C:\StephDenis\C4FDevKit\DXSoundRecorder\Source\VCS\UDPSoundSender\obj\Debug\UDPSoundSender.exe
+C:\StephDenis\C4FDevKit\DXSoundRecorder\Source\VCS\UDPSoundSender\obj\Debug\UDPSoundSender.pdb
