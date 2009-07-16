@@ -16,17 +16,19 @@ namespace UDPSoundSender
         {
             bool showUsage = true;
 
-            if (args.Length >= 2) // requires 2 mandatory parameters: adrs + port
+            if (args.Length >= 1) // requires port at least
             {
                 try
                 {
-                    String adrs = args[0];
                     // todo: validate with a regex (ip or name)
 
-                    int port = int.Parse(args[1]);
+                    int port = int.Parse(args[0]);
                     if (port > 0 && port < 65536)
                     {
                         showUsage = false;
+
+                        String adrs = "127.0.0.1";
+                        if (args.Length >= 2) adrs = args[1];
 
                         
                         // todo: retreive list of devices and select from/display it in Show Usage

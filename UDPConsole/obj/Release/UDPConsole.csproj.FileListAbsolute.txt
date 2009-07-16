@@ -8,3 +8,8 @@ C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApp
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\bin\Release\UDPConsole.exe
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\bin\Release\UDPConsole.pdb
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPConsole\ConsoleApplication2\obj\Release\ResolveAssemblyReference.cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\bin\Release\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\bin\Release\UDPConsole.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\obj\Release\ResolveAssemblyReference.cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\obj\Release\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\obj\Release\UDPConsole.pdb
