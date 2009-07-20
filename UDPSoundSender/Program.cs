@@ -30,20 +30,16 @@ namespace UDPSoundSender
                         String adrs = "127.0.0.1";
                         if (args.Length >= 2) adrs = args[1];
 
-                        
-                        // todo: retreive list of devices and select from/display it in Show Usage
-                        SoundDeviceType device = SoundDeviceType.Default;
 
-                        int samplesPerSecond = 11000;
-                        short bitsPerSample = 8;
-                        short channels = 1;
+                        // todo: retreive list of devices and select from/display it in Show Usage
+
                         // todo: parse and set these parameters
                         SampleRate rate = SampleRate.Rate11KHz;
                         SampleSize size = SampleSize.Bits8;
-
+                        short channels = 1;
 
                         SoundRecorder recorder = new SoundRecorder(SoundDeviceType.Default, rate, size, channels);
-                        UdpClient udpClient = new UdpClient(adrs,port);
+                        UdpClient udpClient = new UdpClient(adrs, port);
                         Console.WriteLine("Sending sound packets on UDP port " + port);
                         try
                         {
