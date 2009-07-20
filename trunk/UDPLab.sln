@@ -6,8 +6,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPScope", "UDPScope\UDPScope.csproj", "{81093061-1CAA-404C-8FA0-CC53780B742D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPSoundSender", "UDPSoundSender\UDPSoundSender.csproj", "{078F7502-859D-4A62-AE29-3012FAD8C1A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1904A41B-D1B8-40E5-ADBB-728DDCF7C816} = {1904A41B-D1B8-40E5-ADBB-728DDCF7C816}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPSpectrum", "UDPSpectrum\UDPSpectrum.csproj", "{1DA774DD-F12E-4C02-BCB1-4773BBC8DBD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1904A41B-D1B8-40E5-ADBB-728DDCF7C816} = {1904A41B-D1B8-40E5-ADBB-728DDCF7C816}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exocortex.DSP.v1", "..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Exocortex.DSP.v1.csproj", "{1904A41B-D1B8-40E5-ADBB-728DDCF7C816}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +39,10 @@ Global
 		{1DA774DD-F12E-4C02-BCB1-4773BBC8DBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA774DD-F12E-4C02-BCB1-4773BBC8DBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA774DD-F12E-4C02-BCB1-4773BBC8DBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1904A41B-D1B8-40E5-ADBB-728DDCF7C816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1904A41B-D1B8-40E5-ADBB-728DDCF7C816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1904A41B-D1B8-40E5-ADBB-728DDCF7C816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1904A41B-D1B8-40E5-ADBB-728DDCF7C816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
