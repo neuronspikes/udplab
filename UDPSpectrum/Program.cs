@@ -52,43 +52,36 @@ namespace UDPSpectrum
                                 // Blocks until a message returns on this socket from a remote host.
                                 Byte[] receiveBytes = inputUdpClient.Receive(ref RemoteIpEndPoint);
 
-                                // Uses the IPEndPoint object to determine which of these two hosts responded.
-                                /*
-                                Console.WriteLine("From " +
-                                                            RemoteIpEndPoint.Address.ToString() +
-                                                            ":" +
-                                                            RemoteIpEndPoint.Port.ToString());
-                                 * */
-                                
-                                // todo: Compute Spectrum
-                                
-                                /*
-                                List<ComplexF> cxList= new List<ComplexF>(1024);
-                                for (int i = 0; i<1024;i++){
-                                    cxList.Add( new ComplexF((float)receiveBytes[i],0));
-                                }
-                                ComplexF[] cxArray =cxList.ToArray<ComplexF>();
-                                */
+                                //todo:Size handling!!!
+                                int size = 1024;
 
-                                //remap type
-                                List<float> fList = new List<float>(1024);
-                                for (int i = 0; i < 1024; i++)
+                                // prepare dataset from real data
+                                List<ComplexF> cxList = new List<ComplexF>(size);
+                                for (int i = 0; i < size; i++)
                                 {
-                                    fList.Add((float)receiveBytes[i]);
+                                    // unsigned byte to R=[0..1],I=0 complex number
+                                    cxList.Add(new ComplexF((float)(receiveBytes[i]-128)/128, 0));
                                 }
-                                float[] fArray = fList.ToArray<float>();
-                                Fourier.RFFT(fArray, FourierDirection.Forward);
+
+                                // Transform in the complex array
+                                ComplexF[] cxArray =cxList.ToArray<ComplexF>();
+                                Fourier.FFT(cxArray, FourierDirection.Forward);
                                 
                                 // remap type
-                                List<byte> bList = new List<byte>(1024);
-                                for (int i = 0; i < fArray.Length; i++)
+                                List<byte> abList = new List<byte>(size);
+                                List<byte> pbList = new List<byte>(size);
+                                for (int i = 0; i < size; i++)
                                 {
-                                    bList.Add((byte)fArray[i]);
+                                    abList.Add((byte)(cxArray[i].GetModulus()*256));// Amplitude [0..256]
+                                    pbList.Add((byte)(cxArray[i].GetArgument()/(2*Math.PI)*256));// Phase [0..256]
+                                    
                                 }
-                                byte[] amplitude = bList.ToArray<Byte>();
+                                byte[] amplitude = abList.ToArray<Byte>();
+                                byte[] phase = pbList.ToArray<Byte>();
+
                                 // and send!
                                 amplitudeUdpClient.Send(amplitude, amplitude.Length);
-                               // phaseUdpClient.Send(phase, phase.Length);
+                                phaseUdpClient.Send(phase, phase.Length);
                             }
 
 

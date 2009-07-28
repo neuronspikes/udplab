@@ -1,9 +1,4 @@
-﻿using System.Net.Sockets;
-using System.Net;
-using System.Threading;
-using System;
-using System.Drawing;
-using System.Drawing.Imaging;
+﻿
 
 namespace UDPScope
 {
@@ -25,78 +20,6 @@ namespace UDPScope
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-
-        public static bool messageReceived = false;
-        private Byte[] lastData;
-
-        public void UDPPacketReceivedCallback(IAsyncResult ar)
-        {
-            UdpClient u = (UdpClient)((UdpState)(ar.AsyncState)).u;
-            IPEndPoint e = (IPEndPoint)((UdpState)(ar.AsyncState)).e;
-
-            Byte[] receiveBytes = u.EndReceive(ar, ref e);
-            lastData = (Byte[])receiveBytes.Clone();
-            screen.Invalidate();
-            //Console.WriteLine("received " + lastData.Length + " bytes");
-            u.BeginReceive(new AsyncCallback(this.UDPPacketReceivedCallback), ar.AsyncState);
-        }
-
-        public void updateImage()
-        {
-            //Console.Write("redrawing:");
-            if (lastData != null)
-            {
-                //Console.WriteLine(" OK");
-                int width = lastData.Length;
-
-                Image image = this.screen.Image;
-                if (image == null)
-                {
-                    this.screen.Image = new Bitmap(1024, 256,PixelFormat.Format32bppArgb);
-                    image = this.screen.Image;
-                }
-
-                if (image.Width < width) width = image.Width;
-                //  todo: trace graph now
-
-                //Console.WriteLine("Working width=" + width);
-
-                lock (this.screen)
-                {
-                    Rectangle srcRect = new Rectangle(0, 0, image.Width, image.Height);
-                    BitmapData see = ((Bitmap)image).LockBits(srcRect, ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
-                    // process
-                    int PixelSize = 4; //A,R,G,B
-                    int x = 0, y = 0;
-                    int w = image.Width, h = image.Height;
-
-                    unsafe
-                    {
-                        for (int yScan = y; yScan < (y + h); yScan++)
-                        {
-
-                            byte* row = (byte*)see.Scan0 + yScan * see.Stride;
-                            for (int xScan = x; xScan < (x + w); xScan++)
-                            {
-                                int xRef = xScan * PixelSize;
-
-                                row[xRef] = (yScan == 128 ? (byte)255 : (byte)0); // B
-                                row[xRef + 1] = (lastData[xScan] > yScan ? (byte)0 : (byte)255); // G
-                                row[xRef + 2] = (yScan % 16 == 0 || xScan % 16 == 0 ? (byte)255 : (byte)0);  // R = Grid
-                                row[xRef + 3] = 255;  // A
-                            }
-                        }
-                    }
-                    ((Bitmap)image).UnlockBits(see);
-                }
-            }
-            else
-            {
-                Console.WriteLine(" Redrawing aborted");
-
-            }
         }
 
 
@@ -131,8 +54,9 @@ namespace UDPScope
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(75, 23);
             this.Start.TabIndex = 1;
-            this.Start.Text = "Start";
+            this.Start.Text = "Stop";
             this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
             // portNumber
             // 

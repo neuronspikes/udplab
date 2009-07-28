@@ -15,10 +15,10 @@ namespace UDPScope
         /// The main entry point for the application.
         /// </summary>
         /// 
-        public static Thread workerThread;
+        private static UDPScope form;
 
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
 
 
@@ -27,25 +27,20 @@ namespace UDPScope
             // Start Window
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            UDPScope form = new UDPScope();
+            form = new UDPScope();
 
             // start thread to receive data and update screen
             int port = 11000;
-            UdpClient udpClient = new UdpClient(port);
-
-            //IPEndPoint object will allow us to read datagrams sent from any source.
-            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
-
-            Console.WriteLine("Receiving UDP packets on port " + port);
-            UdpState s = new UdpState();
-            s.e = RemoteIpEndPoint;
-            s.u = udpClient;
-            udpClient.BeginReceive(new AsyncCallback(form.UDPPacketReceivedCallback), s);
-
-            
+            if(args.Length>0){
+                port = int.Parse(args[0]);
+        }
+            form.StartReception(port);
             Application.Run(form);
 
         }
+
+
+
     }
 
     public class UdpState
