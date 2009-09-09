@@ -60,20 +60,32 @@ namespace UDPSpectrum
                                 for (int i = 0; i < size; i++)
                                 {
                                     // unsigned byte to R=[0..1],I=0 complex number
-                                    cxList.Add(new ComplexF((float)(receiveBytes[i]-128)/128, 0));
-                                }
+                                    //cxList.Add(new ComplexF((float)(receiveBytes[i]), 0));
 
+                                    
+                                    float t = (float)(2*Math.PI*size)/16; // sampling rate is 16 samples/sec.
+                                    float pt = (float)(1.1 + 1.0*Math.Sin(t) + .5*Math.Sin(1.5*t));
+                                    cxList.Add(new ComplexF(pt, 0));
+                                    // * */
+                                }
+                              
                                 // Transform in the complex array
                                 ComplexF[] cxArray =cxList.ToArray<ComplexF>();
                                 Fourier.FFT(cxArray, FourierDirection.Forward);
-                                
+
+                                // find boundaries
+                                ComplexF maxCx=cxArray.Max<ComplexF>();
+                                ComplexF minCx = cxArray.Min<ComplexF>();
+
                                 // remap type
                                 List<byte> abList = new List<byte>(size);
                                 List<byte> pbList = new List<byte>(size);
                                 for (int i = 0; i < size; i++)
                                 {
-                                    abList.Add((byte)(cxArray[i].GetModulus()*256));// Amplitude [0..256]
-                                    pbList.Add((byte)(cxArray[i].GetArgument()/(2*Math.PI)*256));// Phase [0..256]
+                                    // also realign negative frequencies and flip amplitude
+                                    int n = (i + size / 2) % size;
+                                    abList.Add((byte)(255 - ((cxArray[n].GetModulus() * 255 )/ 1024)));// Amplitude [0..255]
+                                    pbList.Add((byte)((cxArray[n].GetArgument() + Math.PI) / (2 * Math.PI) * 256));// Phase [0..255]
                                     
                                 }
                                 byte[] amplitude = abList.ToArray<Byte>();
