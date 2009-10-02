@@ -1,0 +1,6 @@
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bin\Release\UDPSpectrum.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bin\Release\UDPSpectrum.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\obj\Release\ResolveAssemblyReference.cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\obj\Release\UDPSpectrum.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\obj\Release\UDPSpectrum.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bin\Release\Exocortex.DSP.v1.dll

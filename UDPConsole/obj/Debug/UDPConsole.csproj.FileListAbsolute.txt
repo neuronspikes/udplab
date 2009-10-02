@@ -1,0 +1,5 @@
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\bin\Debug\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\bin\Debug\UDPConsole.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\obj\Debug\UDPConsole.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPConsole\obj\Debug\UDPConsole.pdb

@@ -1,0 +1,8 @@
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Release\ResolveAssemblyReference.cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Release\UDPScope.UDPScope.resources
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Release\UDPScope.Properties.Resources.resources
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Release\UDPScope.csproj.GenerateResource.Cache
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\bin\Release\WindowsFormsApplication1.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Release\WindowsFormsApplication1.exe
+C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Release\WindowsFormsApplication1.pdb
