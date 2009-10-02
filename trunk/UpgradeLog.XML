@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UDPLab">
+</Property><Property Name="Solution File" Value="C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPLab.sln">
+</Property><Property Name="Date" Value="16 juillet 2009">
+</Property><Property Name="Time" Value="14:13:04">
+</Property></Properties><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Exocortex.DSP.v1.csproj" Description="Project file successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\Exocortex.DSP.v1.csproj">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Complex.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\Complex.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\ComplexArray.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\ComplexArray.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\ComplexF.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\ComplexF.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\ComplexMath.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\ComplexMath.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\ComplexStats.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\ComplexStats.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Fourier.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\Fourier.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\FourierDirection.cs" Description="File successfully backed up as C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\Backup\FourierDirection.cs">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Exocortex.DSP.v1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Exocortex.DSP.v1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Exocortex.DSP.v1" Source="..\..\..\..\Desktop\@train\ExocortexDSP_v1.2\src\Exocortex.DSP.v1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
