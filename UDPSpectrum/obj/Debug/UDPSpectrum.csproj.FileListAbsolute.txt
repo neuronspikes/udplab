@@ -19,3 +19,10 @@ C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bi
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bin\Debug\AForge.Video.DirectShow.dll
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bin\Debug\AForge.Video.dll
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSpectrum\bin\Debug\AForge.Video.VFW.dll
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\bin\Debug\UDPSpectrum.exe
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\bin\Debug\UDPSpectrum.pdb
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\bin\Debug\Exocortex.DSP.v1.dll
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\bin\Debug\Exocortex.DSP.v1.pdb
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\obj\Debug\UDPSpectrum.exe
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSpectrum\obj\Debug\UDPSpectrum.pdb
