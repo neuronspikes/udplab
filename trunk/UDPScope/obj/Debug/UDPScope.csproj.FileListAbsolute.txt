@@ -6,3 +6,11 @@ C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\D
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Debug\UDPScope.csproj.GenerateResource.Cache
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPScope\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\obj\Debug\UDPScope.UDPScope.resources
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\obj\Debug\UDPScope.Properties.Resources.resources
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\obj\Debug\UDPScope.csproj.GenerateResource.Cache
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPScope\obj\Debug\WindowsFormsApplication1.pdb

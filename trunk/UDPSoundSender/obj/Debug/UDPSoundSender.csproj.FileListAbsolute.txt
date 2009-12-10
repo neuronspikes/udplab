@@ -3,3 +3,8 @@ C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSoundSender
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSoundSender\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSoundSender\obj\Debug\UDPSoundSender.exe
 C:\Users\sdenis.NOAM\Documents\Visual Studio 2008\Projects\UDPLab\UDPSoundSender\obj\Debug\UDPSoundSender.pdb
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSoundSender\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSoundSender\bin\Debug\UDPSoundSender.exe
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSoundSender\bin\Debug\UDPSoundSender.pdb
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSoundSender\obj\Debug\UDPSoundSender.exe
+C:\Users\sdenis\Documents\Visual Studio 2008\Projects\udplab\UDPSoundSender\obj\Debug\UDPSoundSender.pdb
