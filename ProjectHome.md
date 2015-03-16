@@ -1,0 +1,1 @@
+Using your local network as a bus, these applications can be used together to build complex realtime systems with sound, video and other input/output as well as transformations such as FFT and neural networks.
